@@ -1,0 +1,217 @@
+<html>
+<head>
+<meta name="viewport" content="width=500, initial-scale=1">
+<link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+
+/*
+Radios religiosas
+
+http://23.239.68.71:9448/; : Crsitianos
+http://83.170.76.46:8010/;stream.mp3 : cristianos workship
+
+https://ssl.shoutcaststreaming.us:8061/stream/1/ :judio 91 fm --
+http://103fm.live.streamgates.net/103fm_live/1multix/icecast.audio :judio 103 fm
+
+http://voiceofislam.appsunder.com:8000/voiceofislam.mp3 : The Voice of Islam Radio Station 87.6 FM
+http://167.114.64.181:8368/stream : Love Islam Radio
+
+
+http://www.2mfm.org.au:8000/live : 2MFM - Muslim Community Radio 92.1 FM
+http://s2.voscast.com:9356/stream/1/ : Muslim Vaanoli
+*/
+
+function Chris()
+{
+var cris = document.getElementById('Chris');
+cris.play()
+}
+
+function workship(){
+var worship = document.getElementById('Worship');
+worship.play();
+}
+
+function noventafm(){
+var noventa = document.getElementById('noventa');
+noventa.play();
+}
+
+
+function ejad()
+{
+var ejad = document.getElementById('ejad');
+ejad.play()
+}
+function muslim_one(){
+var muslin = document.getElementById('voice');
+muslin.play();
+}
+
+function muslim_two(){
+var muslin_t = document.getElementById('love');
+muslin_t.play();
+}
+
+
+function muslimtree(){
+var muslimtree = document.getElementById('Com');
+muslimtree.play();
+}
+
+function muslimfour(){
+var muslimfour = document.getElementById('Vaa');
+muslimfour.play();
+}
+
+
+function stop(){
+var cris = document.getElementById('Chris');
+var worship = document.getElementById('Worship');
+var noventa = document.getElementById('noventa');
+var ejad = document.getElementById('ejad');
+var muslin = document.getElementById('voice');
+var muslin_t = document.getElementById('love');
+var muslimtree = document.getElementById('Com');
+
+var muslimfour = document.getElementById('Vaa');
+
+
+
+worship.pause();
+cris.pause();
+noventa.pause();
+ejad.pause();
+muslin.pause();
+muslin_t.pause();
+muslimtree.pause();
+muslimfour.pause();
+}
+
+
+/////
+function info(){
+inf = "<center>Desarrollado para <b>Halima</b> la chica mas hermosa de arabia</center> ";
+var info = document.getElementById('info').innerHTML=inf;
+}
+
+</script>
+
+</head>
+<body>
+<!-- Audio-->
+<audio id="Chris">
+  <source src="http://23.239.68.71:9448/;">
+  </audio>
+  <audio id="Worship">
+  <source src="http://83.170.76.46:8010/;stream.mp3">
+</audio>
+<audio id="jud">
+  <source src="https://ssl.shoutcaststreaming.us:8061/stream/1/">
+</audio>
+<audio id="noventa">
+<source src="https://ssl.shoutcaststreaming.us:8061/stream/1/ ">
+</audio>
+<audio id="ejad">
+<source src="http://103fm.live.streamgates.net/103fm_live/1multix/icecast.audio">
+</audio>
+
+<audio id="voice">
+<source src="http://voiceofislam.appsunder.com:8000/voiceofislam.mp3">
+</audio>
+
+<audio id="love">
+<source src="http://167.114.64.181:8368/stream">
+</audio>
+
+<audio id="Com">
+<source src="http://www.2mfm.org.au:8000/live">
+</audio>
+
+<audio id="Vaa">
+<source src="http://s2.voscast.com:9356/stream/1/">
+</audio>
+
+
+
+
+<!-- End audios-->
+<div class="p-3 mb-2 bg-primary text-white">Reidio Religion</div>
+
+<div>
+<!-- conmteniudo -->
+<center>Christian, Judio, Muslim and Islam</br>
+<button onclick="Chris()">
+<img src="assets/radio1.png" height="80" width="80">
+</br>
+Espanish
+</button>
+<button onclick="workship()">
+<img src="assets/workship.jpg" height="80" width="80">
+</br>
+English
+</button>
+</center>
+<center>
+
+<button onclick="noventafm()">
+<img src="assets/judio1.jpg" height="80" width="80">
+</br>
+Judio
+</button>
+
+<button onclick="ejad()">
+<img src="assets/ejad.png" height="80" width="80">
+</br>
+Judio
+</button>
+
+<button onclick="muslim_one()">
+<img src="assets/voice.png" height="80" width="80">
+</br>
+Islam
+</button>
+
+
+<button onclick="muslim_two()">
+<img src="assets/love islam.png" height="80" width="80">
+</br>
+Islam
+</button>
+
+<button onclick="muslimtree()">
+<img src="assets/muslin.png" height="80" width="80">
+</br>
+Muslim
+</button>
+<button onclick="muslimfour">
+<img src="assets/Muslim2.png" height="80" width="80">
+</br>
+Muslim
+</button>
+</center>
+
+
+</br>
+
+</br>
+</br>
+<center>
+<button onclick="stop()">Stop Reidio</button>
+</center>
+<div>
+
+
+<center>
+</br>
+<img src="assets/info.png" height="80" width="80" onclick="info()">
+</center>
+<div id="info">
+<!-- acerca de -->
+
+
+</div>
+
+</body>
+</html>
