@@ -19,6 +19,11 @@ var dat = document.getElementById('archivo').innerHTML="<iframe src='proyectos.h
 document.getElementById("mySidebar").style.display = "none";
 }
 
+function apps(){
+var dat = document.getElementById('archivo').innerHTML="<iframe src='apps.html'></iframe>'";
+document.getElementById("mySidebar").style.display = "none";
+}
+
 </script>
 
 <!---->
@@ -84,6 +89,8 @@ body{
 <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
   <button onclick="w3_close()" class="w3-bar-item w3-large">Cerrar &times;</button>
   <a href="#" onclick="proyectos()" class="w3-bar-item w3-button">Proyectos</a>
+  <a href="#" onclick="apps()" class="w3-bar-item w3-button" title="Apps de todo Tipo">Apps</a>
+  
   <a href="#" onclick="acercade()" class="w3-bar-item w3-button">Acerca De</a>
   <a href="#" onclick="contacto()" class="w3-bar-item w3-button">Contacto</a>
 </div>
