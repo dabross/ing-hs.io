@@ -1,7 +1,12 @@
 <html>
 <head>
+
+<title>ING-Hs</title>
+<link rel="icon" href="assests/logo.png">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<meta content="text/html" charset="UTF-8" http-equiv="content-type">
+<link rel="stylesheet" href="css/w3.css" media="screen">
 
 
 <!---->
@@ -32,7 +37,7 @@ document.getElementById("mySidebar").style.display = "none";
     <style>
     .header{
 	padding:13px;
-        background-color:black;
+        background-color:#0a0a0a;
         width:100%;
        /* width:100%;
 		height:100px;
@@ -42,6 +47,7 @@ document.getElementById("mySidebar").style.display = "none";
     .c{
         color:white;
         text-align: left;
+		
         
     }
     .pile{
@@ -67,10 +73,12 @@ height:100%;
   width:100%;
 }
 footer{
-background-color:black;
+background-color:#0a0a0a;
 padding:10px;
 color:white;
 width:100%;
+float:inherit;
+
 }
 
 .img{
@@ -86,8 +94,9 @@ body{
 <body>
 
 <!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none;width:35%;" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-large">Cerrar &times;</button>
+
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none;width:35%;" id="mySidebar" >
+  <button onclick="w3_close()" class="w3-bar-item w3-large" style="">Cerrar &times;</button>
   
   <a href="#" onclick="proyectos()" class="w3-bar-item w3-button">Proyectos</a>
   <a href="#" onclick="apps()" class="w3-bar-item w3-button" title="Apps de todo Tipo">Apps</a>
@@ -97,8 +106,12 @@ body{
   <br>
   <center>
   <img src="assests/logo.png" style="border-radius:60%;height:100;width:100;" title="Hi Welcome!!!!">
+  <hr style="color:crimson;width:80%;">
+  ING-Hs
+  <hr style="color:crimson;width:80%;">
   </br>
-  <p style="text-align:justify; padding:18px;height:auto;width:auto;">Hola muchas gracias por dedicar tu tiempo e interés para ver mi portafolio.</p>
+  <!--
+  
   
   <!--Espacio de notificacion -->
   
@@ -106,9 +119,9 @@ body{
   <!--Fin de espacio de notificacion -->
   
   </center>
+
+
 </div>
-
-
 
 <!--fin de despegable -->
 
@@ -117,9 +130,9 @@ body{
 <div class="header">
     <header>
         <div class="despegable"></br>
-<img onclick="w3_open()" src="assests/menu.svg"  height="40px" with="40px">
+<img onclick="w3_open()" src="assests/menu.svg"  height="40px" width="40px">
 </div><br />
-        <h2 class="c">Compile ;</h2>
+        <h2 class="c">Compile;</h2>
     
         </header>
 </div>
@@ -143,6 +156,11 @@ function w3_close() {
 </div>
 </center>
 <footer>
-ING-Hs 2020
+<center>
+Desarrando Soluciones
+<hr style="width:30%;"><p>
+ING-Hs 2021
+</p>
+</center>
 </footer>
 </body>

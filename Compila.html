@@ -3,7 +3,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <style>
     body{
-        background-color:black;
+        background-color:#0a0a0a;
     }
     .C{
        color:brown;
@@ -96,6 +96,22 @@ div, h1, p, a, video, h2{
    /**/
 </style>
 
+<script>
+
+var palabras = new Array(['0',''],['Soluciones a Medida'],['Desarrollo de Apps'],['Soporte Técnico'],['Consultoria'],['Ciber Seguridad']);
+var container=0;
+function cambeapalabra(){
+
+container++;
+document.getElementById('palabra').innerHTML=palabras[container];
+if(container==5){
+container=0;
+}else{
+//
+}
+}
+
+</script>
 
     </head>
     <body>
@@ -104,7 +120,14 @@ div, h1, p, a, video, h2{
 </video>
 </div>
         <center>
-        <h1 class="C">C</h1><h2 class="pila">ompile ;</h2><br/><p class="pilas"><!--Desarrollo de software.--></p><br><h2 class="logo">ING-Hs</h2>
+		<script>
+		onload = function(){
+		cambeapalabra();
+		setInterval(cambeapalabra,5000);
+		
+		}
+		</script>
+        <h1 class="C">C</h1><h2 class="pila">ompile ;</h2><br/><p class="pilas" id='palabra'>Desarrando Soluciones</p><br><h2 class="logo">ING-Hs</h2>
     </center>
 
 
